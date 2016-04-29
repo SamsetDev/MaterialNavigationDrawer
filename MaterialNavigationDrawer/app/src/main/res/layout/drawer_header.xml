@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+     >
+
+    <RelativeLayout
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/drawer_grouping_padding"
+        android:paddingLeft="@dimen/drawer_left_margin"
+        android:paddingRight="@dimen/drawer_right_margin" >
+
+        <com.samset.materialnavigationdrawer.ui.CircleImage
+            android:id="@+id/iv_header_profile_pic"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_above="@+id/headerText"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_avtar" />
+
+
+        <LinearLayout
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_header_text"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_header_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Samset"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_header_profile_viewprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="View Profile"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
